@@ -1,6 +1,6 @@
 /* eslint-env node */
 import { Footer, Layout, Navbar } from "nextra-theme-docs";
-import { Banner, Head } from "nextra/components";
+import { Head } from "nextra/components";
 import { getPageMap } from "nextra/page-map";
 import "nextra-theme-docs/style.css";
 import Icon from "./images/logo-outline.png";
@@ -51,7 +51,7 @@ export default async function RootLayout({ children }) {
           navbar={navbar}
           footer={<Footer>© {new Date().getFullYear()} PresetBase</Footer>}
           editLink="Edit this page on GitHub"
-          docsRepositoryBase="https://github.com/k0src/PresetBase-Docs"
+          docsRepositoryBase="https://github.com/k0src/PresetBase-Docs/blob/master"
           sidebar={{ defaultMenuCollapseLevel: 1 }}
           pageMap={pageMap}
         >
