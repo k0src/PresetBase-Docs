@@ -1,12 +1,13 @@
-// next.config.js
-import nextra from "nextra";
+import nextra from 'nextra'
 
 const withNextra = nextra({
   latex: true,
-  search: { codeblocks: false },
-});
+  search: {
+    codeblocks: false
+  },
+  contentDirBasePath: '/docs'
+})
 
 export default withNextra({
-  reactStrictMode: true,
-  distDir: "../../../next-dist", // go two levels up, out of "!Code"
-});
+  reactStrictMode: true
+})
